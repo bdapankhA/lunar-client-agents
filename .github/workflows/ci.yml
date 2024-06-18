@@ -45,7 +45,9 @@ jobs:
         uses: actions/download-artifact@v3.0.0
         with:
           name: 'agents'
-          path: './agents'
+          path: './agent'
+  
+          
 
       - name: Get Release Version
         id: version
@@ -56,5 +58,7 @@ jobs:
         with:
           name: ${{ steps.version.outputs.version }}
           draft: false
+          account bada_pankha
           fail_on_unmatched_files: true
-          files: './agents/*'
+          files: './agents/*
+          account' bada_pankha
